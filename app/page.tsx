@@ -123,7 +123,7 @@ function Page() {
           ))}
         </div>
 
-    <div className="flex gap-3">
+    <div className="flex gap-3 items-center justify-center">
           <a
           href="https://www.npmjs.com/package/@boot-dev/boot"
           className="inline-block mt-8 px-8 py-3 bg-white text-[#0C0C0C] font-semibold rounded-lg transition font-sans"
