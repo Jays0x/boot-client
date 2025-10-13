@@ -94,7 +94,7 @@ function Page() {
   return (
     <div className="min-h-screen bg-[#0F0F0F] flex items-center justify-center px-4 font-sans">
       <div className="max-w-2xl text-center">
-        <h1 className="text-5xl font-bold mb-4 text-white font-sans">
+        <h1 className="md:text-5xl text-3xl font-bold mb-4 text-white font-sans">
           Boot — Your Developer Autopilot
         </h1>
         <p className="text-lg text-white/70 mb-8 font-sans">
@@ -117,18 +117,26 @@ function Page() {
               {line}
               {/* Only show cursor on the last line that's being typed */}
               {idx === displayedLines.length - 1 && currentChar < (demoCommands[currentCommandIndex]?.cmd.length || 0) && (
-                <span className="text-green-400 animate-blink">█</span>
+                <span className="text-white animate-blink">█</span>
               )}
             </p>
           ))}
         </div>
 
-        <a
-          href="#get-started"
+    <div className="flex gap-3">
+          <a
+          href="https://www.npmjs.com/package/@boot-dev/boot"
           className="inline-block mt-8 px-8 py-3 bg-white text-[#0C0C0C] font-semibold rounded-lg transition font-sans"
         >
-          Get Started
+          Read docs
         </a>
+            <a
+          href="https://github.com/Jays0x/boot"
+          className="inline-block mt-8 px-8 py-3 border border-white/10 bg-[#181818] text-[#fff] font-semibold rounded-lg transition font-sans"
+        >
+          Contribute
+        </a>
+    </div>
       </div>
 
       <style jsx>{`
