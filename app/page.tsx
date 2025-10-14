@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/next"
 
 // Built-in templates
 const builtinTemplates = {
@@ -93,6 +94,7 @@ function Page() {
 
   return (
     <div className="min-h-screen bg-[#0F0F0F] flex items-center justify-center px-4 font-sans">
+      <Analytics/>
       <div className="max-w-2xl text-center">
         <h1 className="md:text-5xl text-3xl font-bold mb-4 text-white font-sans">
           Boot — Your Developer Autopilot
